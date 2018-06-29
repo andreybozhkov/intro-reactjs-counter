@@ -6,10 +6,10 @@ let counter = 0;
 
 const incrementCounter = () => {
   counter++;
-  rerender(App(), document.getElementById('root'));
+  rerender(Counter(), document.getElementById('root'));
 };
 
-const App = () => (
+const Counter = () => (
   <div className="App">
     <header className="App-header">
       {counter}
@@ -20,4 +20,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+export default Counter;
